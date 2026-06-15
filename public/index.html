@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Portal de Estudos Vestibulares</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">V</span>
+        <div>
+          <h1>Vestibular+</h1>
+          <p>Organize seus estudos para vestibulares de forma clara e rápida.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Bem-vindo</p>
+          <h2>Faça login e comece a organizar seus materiais de estudo</h2>
+          <p>Crie, busque e atualize conteúdos de estudo para disciplina, questões e horas dedicadas.</p>
+        </div>
+
+        <div class="login-panel">
+          <div class="card-header">
+            <h2>Entrar</h2>
+            <p>Digite seu e-mail e senha para acessar o painel.</p>
+          </div>
+          <div id="message" class="message"></div>
+          <form id="loginForm">
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="seu@exemplo.com" required />
+            </div>
+
+            <div class="form-row">
+              <label for="password">Senha</label>
+              <input id="password" type="password" placeholder="••••••••" required />
+            </div>
+
+            <div class="button-row">
+              <button type="submit">Entrar</button>
+            </div>
+          </form>
+          <p class="secondary-text">Ainda não tem cadastro? <a href="/register">Crie sua conta</a>.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/login.js"></script>
+</body>
+</html>

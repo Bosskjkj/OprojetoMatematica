@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Portal de Estudos Vestibulares</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">R</span>
+        <div>
+          <h1>Registro</h1>
+          <p>Crie sua conta para acessar o painel de estudos.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Novo usuário</p>
+          <h2>Cadastre-se para começar seus estudos</h2>
+          <p>Use um e-mail válido e uma senha segura para acessar o portal.</p>
+        </div>
+
+        <div class="login-panel">
+          <div class="card-header">
+            <h2>Cadastrar conta</h2>
+            <p>Informe e-mail, senha e confirme a senha.</p>
+          </div>
+          <div id="message" class="message"></div>
+          <form id="registerForm">
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="seu@exemplo.com" required />
+            </div>
+
+            <div class="form-row">
+              <label for="password">Senha</label>
+              <input id="password" type="password" placeholder="••••••••" required />
+            </div>
+
+            <div class="form-row">
+              <label for="passwordConfirm">Confirme a senha</label>
+              <input id="passwordConfirm" type="password" placeholder="••••••••" required />
+            </div>
+
+            <div class="button-row">
+              <button type="submit">Cadastrar</button>
+            </div>
+          </form>
+          <p class="secondary-text">Já tem conta? <a href="/">Entre aqui</a>.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/register.js"></script>
+</body>
+</html>

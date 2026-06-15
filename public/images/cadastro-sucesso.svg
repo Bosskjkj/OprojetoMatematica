@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Cadastro concluído">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6d5dfc"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="32" fill="url(#bg)"/>
+  <circle cx="154" cy="108" r="56" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="505" cy="92" r="38" fill="#ffffff" fill-opacity="0.18"/>
+  <circle cx="482" cy="325" r="68" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="96" y="88" width="448" height="244" rx="28" fill="#ffffff" fill-opacity="0.94"/>
+  <rect x="138" y="132" width="178" height="18" rx="9" fill="#c7d2fe"/>
+  <rect x="138" y="172" width="296" height="18" rx="9" fill="#e5e7eb"/>
+  <rect x="138" y="212" width="242" height="18" rx="9" fill="#e5e7eb"/>
+  <rect x="138" y="262" width="132" height="52" rx="26" fill="#22c55e"/>
+  <path d="M164 288 L188 312 L236 260" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="332" y="216" width="150" height="110" rx="22" fill="#eef2ff"/>
+  <path d="M380 260h54" stroke="#6366f1" stroke-width="12" stroke-linecap="round"/>
+  <path d="M407 233v54" stroke="#6366f1" stroke-width="12" stroke-linecap="round"/>
+</svg>

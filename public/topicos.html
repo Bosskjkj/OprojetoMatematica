@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vestibular+ - Tópicos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .topicos-container {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .topicos-header {
+      background: linear-gradient(135deg, #1e7a96 0%, #1a6b83 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topicos-header h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .topicos-header .controls {
+      display: flex;
+      gap: 10px;
+    }
+
+    .topico-button {
+      display: block;
+      width: 100%;
+      padding: 18px 20px;
+      margin: 15px 0;
+      background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .topico-button:hover {
+      background: linear-gradient(135deg, #d68910 0%, #c9601a 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+    }
+
+    .loading, .error-message {
+      text-align: center;
+      padding: 40px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .error-message {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    .btn-small {
+      padding: 8px 12px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">V</span>
+        <div>
+          <h1>Vestibular+</h1>
+          <p>Tópicos da disciplina</p>
+        </div>
+      </div>
+      <button id="logoutButton" class="secondary">Sair</button>
+    </header>
+
+    <main class="page-content">
+      <div class="topicos-container">
+        <div class="topicos-header">
+          <div>
+            <h2 id="disciplinaNome">Carregando...</h2>
+            <p id="disciplinaDescricao" style="margin: 5px 0 0 0; font-size: 13px;">Selecione um tópico</p>
+          </div>
+          <div class="controls">
+            <button class="btn-small secondary" onclick="window.location.href='/home'">Voltar</button>
+          </div>
+        </div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <div id="topicosContainer" class="loading">Carregando tópicos...</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/topicos.js"></script>
+</body>
+</html>

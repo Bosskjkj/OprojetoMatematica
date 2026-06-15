@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro concluído</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .success-page { display: grid; gap: 24px; justify-items: center; text-align: center; }
+    .success-card { width: min(100%, 980px); background: rgba(255,255,255,0.96); border-radius: 24px; padding: 28px; box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18); }
+    .success-card img { width: 100%; max-width: 540px; border-radius: 18px; }
+    .success-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .success-actions a, .success-actions button { text-decoration: none; border: none; cursor: pointer; border-radius: 999px; padding: 12px 18px; font-weight: 700; }
+    .success-actions a { background: #4338ca; color: #fff; }
+    .success-actions button { background: #ecfeff; color: #0f172a; }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">R</span>
+        <div>
+          <h1>Cadastro concluído</h1>
+          <p>Sua conta foi criada com sucesso.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="success-page">
+        <article class="success-card">
+          <img src="/images/cadastro-sucesso.svg" alt="Página de confirmação do cadastro" />
+          <h2 style="margin-top: 18px;">Tudo pronto para estudar!</h2>
+          <p style="max-width: 640px; margin: 10px auto 0;">Agora você pode entrar no portal e começar a organizar seus materiais.</p>
+          <div class="success-actions" style="margin-top: 18px;">
+            <a href="/">Entrar agora</a>
+            <button type="button" onclick="history.back()">Voltar ao cadastro</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

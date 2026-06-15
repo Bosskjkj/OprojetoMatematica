@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vestibular+ - Escolha uma Disciplina</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .home-container {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .home-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .home-header h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin: 10px 0;
+    }
+
+    .disciplina-button {
+      display: block;
+      width: 100%;
+      padding: 18px 20px;
+      margin: 15px 0;
+      background: linear-gradient(135deg, #1e7a96 0%, #1a6b83 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .disciplina-button:hover {
+      background: linear-gradient(135deg, #165d7a 0%, #145267 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(30, 122, 150, 0.3);
+    }
+
+    .disciplina-button:active {
+      transform: translateY(0);
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .error-message {
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">V</span>
+        <div>
+          <h1>Vestibular+</h1>
+          <p>Selecione uma disciplina para começar</p>
+        </div>
+      </div>
+      <button id="logoutButton" class="secondary">Sair</button>
+    </header>
+
+    <main class="page-content">
+      <div class="home-container">
+        <div class="home-header">
+          <h2>Escolha uma Disciplina</h2>
+          <p>Selecione a disciplina para ver os tópicos e questões disponíveis</p>
+        </div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <div id="disciplinasContainer" class="loading">Carregando disciplinas...</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/home.js"></script>
+</body>
+</html>
